@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="layout_style.css">
+        <title> Sami Pet Shop</title>
+        <!-- asynchronous loading of script -->
+        <script async src="wishlist.js"></script>
+   </head>
+
+   <body >
+      <div class = "layout">
+         <header >
+            
+            <h1 >Sami Pet Shop</h1>
+            <h4 >A Heaven for your pets</h4>
+
+         </header>
+         <nav class="c1">
+            
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+         </nav>
+         <section ><h2> A place where you can shop for all your pets' needs</h2> </section>
+         <div class="grid">
+            <main class="c1">
+                <h1 style="text-align: center;">Products</h1>
+                <table class="cards-table">
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Item</th>
+                            <th>Desc</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- List of products -->
+                        <tr id="item-1">
+                            <td><img src="7.webp" class="td1"></img></td>
+                            <td>Toilet Essentials - Cat Litter, Litter Scoop & Odour Eliminator</td>
+                            <td>Convenient, safe & easy to use</td>
+                            <td>$50</td>
+                            <td><button id = "1" type="button">Add to list</button></td>
+                        </tr>
+                        <tr id="item-2">
+                            <td><img src="2.webp" class="td1"></td>
+                            <td>Pedigree Chicken & Vegetables Adult Dry Dog Food- 1 kg</td>
+                            <td>High-quality, wholesome, balanced dog food</td>
+                            <td>$20</td>
+                            <td><button id = "2" type="button">Add to list</button></td>
+                        </tr>
+                        <tr id="item-3">
+                            <td><img src="3.webp" class="td1"></td>
+                            <td>HUFT Tugger Dog Rope Toy - 3 Knots - Orange/Grey</td>
+                            <td>Strong, easy to use, eco-friendly dog toy</td>
+                            <td>$5</td>
+                            <td><button id = "3" type="button">Add to list</button></td>
+                        </tr>
+                        <tr id="item-4">
+                            <td><img src="6.webp" class="td1"></td>
+                            <td>Dogaholic Milky Chew Stick Style - 30 Pcs - 500 g</td>
+                            <td>Delicious, easy to chew & made from real ingredients</td>
+                            <td>$30</td>
+                            <td><button id = "4" type="button">Add to list</button></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>            
+            </main>
+
+            <!-- aside element to hold wishlist -->
+            <aside>
+                <h1 style="text-align: center;">Wishlist</h1>
+                <table>
+                    <tbody id="wishlist"> <!-- this id helps in differentiating items that are in wishlist from product list -->
+                    </tbody>
+                </table>
+            </aside>
+         </div>
+         <footer class="c1">
+            Copyright 2022 by Sami Jabai
+         </footer>
+
+      </div>
+   </body>
+</html>

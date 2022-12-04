@@ -1,0 +1,47 @@
+footer {
+    grid-area: footer;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+}
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+aside {
+    grid-area: aside;
+    width: 80%;
+    margin: auto;
+}
+.layout {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "main"
+    "footer"
+    "aside";
+}
+/* This div element with class grid ensures it's 2 children to be aligned to each other */
+.grid {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 4fr 2fr;
+}
+
+nav li {
+    display: inline-block;
+}
+nav ul {
+    float: left;
+}
